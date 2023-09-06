@@ -1,0 +1,104 @@
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #3d3d3f;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+}
+
+h2 {
+  padding-left: 1em;
+}
+
+main {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: block;
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+   
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.left-side {
+  position: relative;
+  width: 100%;
+  padding: 25px;
+  border-right: 1px solid #ddd;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 33.3333%;
+  max-width: 33.333333%;
+}
+
+.right-side {
+  position: relative;
+  width: 100%;
+  padding: 0px;
+
+  flex: 0 0 66.666667%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 66.6667%;
+  max-width: 66.666667%;
+}
+
+.experience .job {
+  padding: 1em 2em;
+  position: relative;
+  border-left: 2px solid var(--color-border);
+  margin: 0px;
+}
+   
+.experience .job .date {
+  position: relative;
+  padding: 0px;
+  font-style: italic;.description {
+    margin: .25% 0 1%;
+    padding: 0px;
+    position: relative;
+  }
+  
+} 
+
+.experience .job .name {
+  margin: .25% 0 1%;
+  padding: 0px;
+  position: relative;
+}
+
+.experience .job .description {
+  margin: .25% 0 1%;
+  padding: 0px;
+  position: relative;
+}
+
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
