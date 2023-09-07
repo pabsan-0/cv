@@ -17,6 +17,12 @@ h2 {
   padding-left: 1em;
 }
 
+img {
+  object-fit:fill;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 main {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -65,6 +71,10 @@ main {
   flex-shrink: 0;
   flex-basis: 66.6667%;
   max-width: 66.666667%;
+}
+
+.experience {
+  border-top: 1px solid #ddd;
 }
 
 .experience .job {
