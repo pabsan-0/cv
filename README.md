@@ -14,7 +14,3 @@ The site was crafted by hand taking inspiration from a few templates online. See
 - https://nirgn975.github.io/devRes/
 - https://h0ngwang.github.io/pure-cv/
 
-
-## The site inside an iframe
-
-<iframe src="https://pabsan-0.github.io/cv" title="Pablo Santana - CV"></iframe> 
