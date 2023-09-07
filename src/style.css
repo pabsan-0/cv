@@ -13,23 +13,26 @@ body {
   padding-left: 0px;
 }
 
-h2 {
-  padding-left: 1em;
-}
-
+/* Images fill parent div */
 img {
   object-fit:fill;
   max-width: 100%;
   max-height: 100%;
 }
 
-main {
+
+/* todo: is this for a specific title? */
+h2 {
+  padding-left: 1em; 
+}
+
+
+
+main.page {
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
-}
 
-.page {
   display: block;
   max-width: 1140px;
   width: 100%;
@@ -39,7 +42,8 @@ main {
   margin-left: auto;
 }
 
-   
+
+/* Used to invoke a new row in a page */
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +53,7 @@ main {
   margin-left: -15px;
 }
 
+/* The following are used to 1/3 split a page vertically */
 .left-col {
   position: relative;
   width: 100%;
@@ -66,7 +71,6 @@ main {
   width: 100%;
   padding: 0px;
 
-  flex: 0 0 66.666667%;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 66.6667%;
@@ -74,7 +78,12 @@ main {
 }
 
 .event-list {
-  border-top: 1px solid #ddd;
+  position: auto; /* placeholder */
+}
+
+.event-list-separator {
+  margin-top: 1%;
+  border-bottom: 1px solid #ddd;
 }
 
 .event-list .event {
@@ -83,29 +92,32 @@ main {
   border-left: 2px solid var(--color-border);
   margin: 0px;
 }
-   
-.event-list .event .date {
-  position: relative;
-  padding: 0px;
-  font-style: italic;.desc {
-    margin: .25% 0 1%;
-    padding: 0px;
-    position: relative;
-  }
-  
+
+.event .date {
+  font-style: italic;  
 } 
 
-.event-list .event .name {
+.event .name {
   margin: .25% 0 1%;
   padding: 0px;
-  position: relative;
 }
 
-.event-list .event .desc {
+.event .desc {
   margin: .25% 0 1%;
   padding: 0px;
-  position: relative;
 }
+
+.event .list {
+  position: auto; /* placeholder */
+}
+
+
+/* Exception class to have compact elements with defaults */
+.compact {
+  margin: 0px;
+  padding: 0px;
+}
+
 
 
 
