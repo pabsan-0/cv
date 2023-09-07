@@ -1,6 +1,6 @@
 # CV
 
-This is my personal resume in HTML+CSS, served as a static website. Visit [pabsan-0.github.io/cv](https://www.pabsan-0.github.io/cv) to reach it. 
+This is my personal resume in HTML+CSS, served as a static website. Visit [pabsan-0.github.io/cv](https://pabsan-0.github.io/cv) to reach it. 
 
 ## TODO
 - QR on top of page
