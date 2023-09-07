@@ -1,17 +1,78 @@
 
-body {
-  font-family: 'Noto Sans', sans-serif;
-  color: #3d3d3f;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
 
-  padding-top: 40px;
-  padding-right: 0px;
-  padding-bottom: 40px;
-  padding-left: 0px;
+@media screen {
+  html {
+    background-image: url('../media/bg.png') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover ;
+  }
+  
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #3d3d3f;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+
+  }
+
+  main.page {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+
+    display: block;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
+
+@media print {
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #3d3d3f;
+    font-size: 8pt;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 0 0 0 0;
+  }
+
+  main.page {
+    background-color: #fff;
+
+    display: block;
+    max-width: auto;
+    max-height: auto;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  @page { size: letter portrait; }
+
+  .right-col {
+    padding-top: 40px;
+  }
+}
+
+
 
 /* Images fill parent div */
 img {
@@ -26,21 +87,6 @@ h2 {
   padding-left: 1em; 
 }
 
-
-
-main.page {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
-
-  display: block;
-  max-width: 1140px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 
 /* Used to invoke a new row in a page */
@@ -58,7 +104,7 @@ main.page {
   position: relative;
   width: 100%;
   padding: 25px;
-  border-right: 1px solid #ddd;
+  border-right: 1.5px solid #ddd;
 
   flex-grow: 0;
   flex-shrink: 0;
@@ -83,13 +129,13 @@ main.page {
 
 .event-list-separator {
   margin-top: 1%;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1.5px solid #ddd;
 }
 
 .event-list .event {
   padding: 1em 2em;
   position: relative;
-  border-left: 2px solid var(--color-border);
+  border-left: 1.5px solid var(--color-border);
   margin: 0px;
 }
 
@@ -117,8 +163,6 @@ main.page {
   margin: 0px;
   padding: 0px;
 }
-
-
 
 
 *, ::after, ::before {
