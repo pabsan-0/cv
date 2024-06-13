@@ -7,6 +7,9 @@
         <title>Pablo Santana - CV</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
+
+        <!-- Force mobile users to desktop view -->
+        <meta name="viewport" content="width=1024">
     </head>
     <body>
         <main class="page" id="1">
@@ -14,7 +17,7 @@
                 
                 <div class="left-col">
                     <div >
-                        <img src="media/pic.png">
+                       <img src="media/pic.png">
                     </div>
 
                     
@@ -75,6 +78,14 @@
             
                 <div class="right-col">
                 
+                    <!-- Floating top right QR-->
+                    <img class="qr-img" src="media/qr.svg"/>
+                    <style type="text/css">
+                        .qr-img{
+                          position:absolute;
+                          right: 4%;
+                        }
+                    </style>
 
 
                     <!-- Experience block -->
