@@ -81,6 +81,10 @@ img {
   max-height: 100%;
 }
 
+.qr-img{
+  position:absolute;
+  right: 4%;
+}
 
 /* todo: is this for a specific title? */
 h2 {
