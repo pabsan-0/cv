@@ -1,11 +1,11 @@
-
-
 @media screen {
   html {
     background-image: url('media/bg.png') ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover ;
+
+    text-size-adjust: 100%; /* prevents text size issues on android */
   }
   
   body {
@@ -52,6 +52,8 @@
     padding-bottom: 0px;
     padding-left: 0px;
     margin: 0 0 0 0;
+
+	zoom: 110%; /* TODO Tune me if content changes */
   }
 
   main.page {
@@ -70,9 +72,19 @@
   .right-col {
     padding-top: 40px;
   }
+ 
+  /* Prevent visited links from printing in dull color */
+  a { 
+    text-decoration: underline;
+	color: blue;
+  }
+
+  /* Qr code is too big*/
+  .qr-img {
+	zoom: 85%;
+  }
+
 }
-
-
 
 /* Images fill parent div */
 img {
@@ -90,8 +102,6 @@ img {
 h2 {
   padding-left: 1em; 
 }
-
-
 
 /* Used to invoke a new row in a page */
 .row {
@@ -143,23 +153,10 @@ h2 {
   margin: 0px;
 }
 
-.event .date {
-  font-style: italic;  
-} 
-
-.event .name {
-  margin: .25% 0 1%;
-  padding: 0px;
-}
-
-.event .desc {
-  margin: .25% 0 1%;
-  padding: 0px;
-}
-
-.event .list {
-  position: auto; /* placeholder */
-}
+.event .date { font-style: italic;  } 
+.event .name { margin: .25% 0 1%; padding: 0px; }
+.event .desc { margin: .25% 0 1%; padding: 0px; }
+.event .list { position: auto; /* placeholder */ }
 
 
 /* Exception class to have compact elements with defaults */
@@ -167,7 +164,6 @@ h2 {
   margin: 0px;
   padding: 0px;
 }
-
 
 *, ::after, ::before {
   box-sizing: border-box;
