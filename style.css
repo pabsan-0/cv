@@ -113,6 +113,13 @@ h2 {
   margin-left: -15px;
 }
 
+.row2 {
+  display: grid; 
+  grid-template-columns: 45% auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* The following are used to 1/3 split a page vertically */
 .left-col {
   position: relative;
@@ -157,6 +164,10 @@ h2 {
 .event .name { margin: .25% 0 1%; padding: 0px; }
 .event .desc { margin: .25% 0 1%; padding: 0px; }
 .event .list { position: auto; /* placeholder */ }
+
+.project-images img {
+    height: 5rem;
+}
 
 
 /* Exception class to have compact elements with defaults */
