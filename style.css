@@ -38,59 +38,6 @@
   }
 }
 
-@media print {
-  body {
-    font-family: 'Noto Sans', sans-serif;
-    color: #3d3d3f;
-    font-size: 8pt;
-    font-weight: 400;
-    line-height: 1.4;
-    text-align: left;
-
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    margin: 0 0 0 0;
-
-	zoom: 110%; /* TODO Tune me if content changes */
-  }
-
-  main.page {
-    background-color: #fff;
-
-    display: block;
-    max-width: auto;
-    max-height: auto;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  @page { size: letter portrait; }
-
-  .right-col {
-    padding-top: 40px;
-  }
- 
-  /* Prevent visited links from printing in dull color */
-  a { 
-    text-decoration: underline;
-	color: blue;
-  }
-
-  /* Qr code is too big*/
-  .qr-img {
-	zoom: 85%;
-  }
-
-  .print-button { display: none !important; }
-
-  .project-images { height: 3rem; }
-  .project-images img { height: 1rem; }
-
-}
-
 /* Images fill parent div */
 img {
   object-fit:fill;
@@ -214,3 +161,58 @@ h2 {
 *, ::after, ::before {
   box-sizing: border-box;
 }
+
+
+@media print {
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #3d3d3f;
+    font-size: 8pt;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 0 0 0 0;
+
+	zoom: 110%; /* TODO Tune me if content changes */
+  }
+
+  main.page {
+    background-color: #fff;
+
+    display: block;
+    max-width: auto;
+    max-height: auto;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  @page { size: letter portrait; }
+
+  .right-col {
+    padding-top: 40px;
+  }
+ 
+  /* Prevent visited links from printing in dull color */
+  a { 
+    text-decoration: underline;
+	color: blue;
+  }
+
+  /* Qr code is too big*/
+  .qr-img {
+	zoom: 85%;
+  }
+
+  .print-button { display: none !important; }
+
+  .project-images { height: 3rem; }
+  .project-images img { height: 1rem; }
+
+}
+
