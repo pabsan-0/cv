@@ -184,13 +184,12 @@ h2 {
     position: fixed; /* Fix the button's position */
     bottom: 20px; /* Position 20px from the bottom */
     right: 20px; /* Position 20px from the right */
-    width: 110px; /* Set width */
-    height: 110px; /* Set height to be the same as width */
-    font-size: 44px; /* Increase font size for the icon */
+    width: 100px; /* Set width */
+    height: 100px; /* Set height to be the same as width */
+    font-size: 30px; /* Increase font size for the icon */
     border: none; /* Remove border */
     border-radius: 50%; /* Make the button perfectly circular */
     cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
     background-color: rgb(250, 250, 255);
     transition: background-color 0.3s ease; /* Smooth transition */
     z-index: 1000; /* Ensure the button is on top of other elements */
