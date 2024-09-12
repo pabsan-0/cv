@@ -165,8 +165,19 @@ h2 {
 .event .desc { margin: .25% 0 1%; padding: 0px; }
 .event .list { position: auto; /* placeholder */ }
 
+.project-images {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1%;
+    overflow: hidden;
+    width: 100%;
+}
+
 .project-images img {
     height: 5rem;
+    object-fit: cover;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 
