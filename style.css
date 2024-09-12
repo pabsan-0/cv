@@ -84,6 +84,11 @@
 	zoom: 85%;
   }
 
+  .print-button { display: none !important; }
+
+  .project-images { height: 3rem; }
+  .project-images img { height: 1rem; }
+
 }
 
 /* Images fill parent div */
@@ -170,7 +175,8 @@ h2 {
     flex-wrap: nowrap;
     gap: 1%;
     overflow: hidden;
-    width: 100%;
+    justify-content: flex-start;
+    width: 100%; */
 }
 
 .project-images img {
