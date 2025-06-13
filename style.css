@@ -85,6 +85,11 @@ h2 {
   max-width: 33.333333%;
 }
 
+/* TODO ad-hoc increase, based on content */
+.technologies li {
+    margin-top: 6%;
+}
+
 .right-col {
   position: relative;
   width: 100%;
@@ -178,7 +183,7 @@ h2 {
     padding-left: 0px;
     margin: 0 0 0 0;
 
-	zoom: 110%; /* TODO Tune me if content changes */
+	zoom: 97%; /* TODO Tune me if content changes */
   }
 
   main.page {
@@ -193,6 +198,10 @@ h2 {
     margin: 0;
   }
   @page { size: letter portrait; }
+
+  /* .left-col li { */
+  /*     margin-left: -12%; */
+  /* } */
 
   .right-col {
     padding-top: 40px;
